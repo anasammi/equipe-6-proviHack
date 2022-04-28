@@ -1,2 +1,1 @@
-# dio-primeiro-repositorio
-Desafio de projeto sobre Git/Github
+# ProviHack - Equipe 6
