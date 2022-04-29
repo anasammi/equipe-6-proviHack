@@ -1,7 +1,7 @@
-import { MainContainer, TextContainer, MainText, Paragraph, Button, Icon } from "./styledLastPage";
+import { MainContainer, TextContainer, MainText, Paragraph, Button, Icon } from "./styledAwardPage";
 import icon from "../../assests/eco.png"
 
-export default function LastPage() {
+export default function AwardPage() {
   return (
     <MainContainer>
       <TextContainer>
