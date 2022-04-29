@@ -1,7 +1,7 @@
 import GlobalState from "./global/GlobalState";
 import { GlobalStyle } from "./GlobalStyled";
 import MapPage from "./Pages/LocationPage/LocationPage";
-import LastPage from "./Pages/LastPage/AwardPage";
+import AwardPage from "./Pages/LastPage/AwardPage";
 
 function App() {
   return (
