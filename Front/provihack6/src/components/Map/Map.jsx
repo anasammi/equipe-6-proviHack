@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   GoogleMap,
   Marker,
@@ -8,10 +8,13 @@ import {
   DirectionsRenderer,
 } from "@react-google-maps/api";
 import "./styled.js";
-import {GOOGLE_API_KEY} from '../apiKey'
-import { Address, AddressField, Map } from "./styled.js";
+import {GOOGLE_API_KEY} from '../../apiKey'
+import { Address, AddressField, Button, DivKm, MapStyled } from "./styled.js";
+import { GlobalStateContext } from "../../global/GlobalStateContext.jsx";
 
-const MapPage = () => {
+const Map = () => {
+
+  const { transport } = useContext(GlobalStateContext); 
   const [map, setMap] = React.useState();
   const [searchBoxA, setSearchBoxA] = React.useState();
   const [searchBoxB, setSearchBoxB] = React.useState();
@@ -83,15 +86,15 @@ const MapPage = () => {
       return {
         origin,
         destination,
-        travelMode: "DRIVING",
+        travelMode: transport,
       };
-    }, [origin, destination]);
+    }, [origin, destination, transport]);
 
   const directionsCallback = React.useCallback((res) => {
     if (res !== null && res.status === "OK") {
       setResponse(res);
     } else {
-      console.log(res);
+      alert('Não existe rota para esse meio de transporte')
     }
   }, []);
 
@@ -103,16 +106,15 @@ const MapPage = () => {
     };
   }, [response]);
 
-  let duration = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].distance.text;
-  let time = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].duration.text;
+  let distance = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].distance.text;
+  let duration = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].duration.text;
 
   return (
-    <Map>
-      <h1>Sua Rota !</h1>
-       <h3>
-      {duration ? duration : null}<br/>
-      {time ? time : null}
-      </h3>
+    <MapStyled>
+      <DivKm>
+      {duration ? <p>Duração: {duration}</p> : null}
+      {distance ? <p>Distância: {distance}</p> : null}
+      </DivKm>
       <LoadScript
         googleMapsApiKey={GOOGLE_API_KEY}
         libraries={["places"]}
@@ -134,12 +136,12 @@ const MapPage = () => {
               placeholder="Digite o endereço final"
             />
           </StandaloneSearchBox>
-          <button onClick={traceRoute}>Traçar rota</button>
+          <Button onClick={traceRoute}>Traçar rota</Button>
         
         </Address>
         <GoogleMap
           onLoad={onMapLoad}
-          mapContainerStyle={{width: "90%", height: "40%", margin: "auto" }}
+          mapContainerStyle={{width: "100%", height: "60%"}}
           center={position}
           zoom={15}
         >
@@ -158,8 +160,8 @@ const MapPage = () => {
           )}
         </GoogleMap>
       </LoadScript>
-    </Map>
+    </MapStyled>
   );
 };
 
-export default MapPage;
+export default Map;

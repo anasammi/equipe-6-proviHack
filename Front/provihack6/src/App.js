@@ -1,8 +1,15 @@
-import MapPage from "./Pages/MapPage";
+import GlobalState from "./global/GlobalState";
+import { GlobalStyle } from "./GlobalStyled";
+import MapPage from "./Pages/LocationPage/LocationPage";
 
 function App() {
   return (
-    <MapPage />
+    <>
+    <GlobalState>
+      <GlobalStyle />
+      <MapPage />
+    </GlobalState>
+    </>
   );
 }
 
