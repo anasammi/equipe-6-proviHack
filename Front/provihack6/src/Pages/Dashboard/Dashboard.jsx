@@ -17,12 +17,12 @@ export default function Dashboard() {
 
             <H2Styled>Status</H2Styled>
             <GridStatus>
-                <H3Styled>CO2/Kg</H3Styled>
+                <H3Styled>CO<sub>2</sub>/Kg</H3Styled>
                 <H3Styled>Km</H3Styled>
                 <H3Styled>Gás</H3Styled>
-                <PStyled>20kg</PStyled>
+                <PStyled>0kg</PStyled>
                 <PStyled>30km</PStyled>
-                <PStyled>50L</PStyled>
+                <PStyled>0L</PStyled>
             </GridStatus>
 
             <H2Styled>Cálculo de CO<sub>2</sub></H2Styled>
