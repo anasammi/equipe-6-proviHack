@@ -1,5 +1,5 @@
 export const goToLocation = (navigate) => {
-    navigate("/");
+    navigate("/map");
   };
 
   export const goToDashboard = (navigate) => {
