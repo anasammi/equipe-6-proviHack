@@ -14,13 +14,13 @@ export const PointStyled = styled.div`
     justify-content: center;
 `
 export const Paragraph = styled.p`
-    font-size: 50px;
-    width: 150px;
-    height: 150px;
+    font-size: 32px;
+    font-family: "Archivo";
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
     border: 10px solid lightgreen;
     border-radius: 50%;
 `
@@ -40,4 +40,9 @@ export const Image = styled.img`
 
 export const PStyled = styled.p`
     margin: 10px;
+    font-family: "Archivo";
+`
+
+export const H3Styled = styled.h3 `
+    font-family: "Archivo";
 `
