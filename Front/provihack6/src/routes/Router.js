@@ -4,6 +4,7 @@ import PinkAwardPage from "../Pages/AwardPages/PinkAwardPage";
 import LocationPage from "../Pages/LocationPage/LocationPage";
 import Shop from "../Pages/Shop/Shop";
 import { InitialPage } from "../Pages/SplashPage/InitialPage";
+import RedAwardPage from "../Pages/AwardPages/RedAwardPage";
 
 const Router = () => {
     return (
@@ -15,6 +16,7 @@ const Router = () => {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/award" element={<PinkAwardPage />} />
+                <Route path="/noaward" element={<RedAwardPage />} />
                 
             </Routes>
         </BrowserRouter>

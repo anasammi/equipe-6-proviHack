@@ -13,3 +13,7 @@ export const goToLocation = (navigate) => {
   export const goToAward = (navigate) => {
     navigate("/award");
   };
+
+  export const goToNoAward = (navigate) => {
+    navigate("/noaward");
+  };
