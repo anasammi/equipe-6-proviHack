@@ -13,8 +13,10 @@ export default function RedAwardPage() {
             Não foi dessa vez que você chegou ao seu destino de forma sustentável. 
         </MainText>
         <Paragraph>
-        Sabia que tantos km de carro poluem tantos sei la o q do planeta? Utilizar 
-        transporte público ou bicicletas é a melhor opção para uma vida e um mundo mais saudável!
+        Sabia que a cada quilômetro um carro popular emite o equivalente a 150
+        gramas de CO2? Dois dias andando de carro emitem tantos poluentes
+        quanto um mês de metrô. Utilizar transporte público ou bicicletas é a
+        melhor opção para uma vida e um mundo mais sustentáveis!
         </Paragraph>
         <MainText> 0 Ponto</MainText>
       </TextContainer>
