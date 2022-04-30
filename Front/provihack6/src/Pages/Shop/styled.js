@@ -58,8 +58,10 @@ export const ImageGrid= styled.div`
 
 export const Product = styled.img`
     height: 170px;
-    width: 120px;
+    /* width: 120px; */
+    max-width: 30vw;
     background: lightgrey;
     border-radius: .8em;
     margin: 10px;
+    object-fit: cover;
 `
