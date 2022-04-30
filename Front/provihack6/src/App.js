@@ -1,7 +1,8 @@
 import GlobalState from "./global/GlobalState";
 import { GlobalStyle } from "./GlobalStyled";
 import MapPage from "./Pages/LocationPage/LocationPage";
-import AwardPage from "./Pages/LastPage/AwardPage";
+import PinkAwardPage from "./Pages/AwardPages/PinkAwardPage";
+import RedAwardPage from "./Pages/AwardPages/RedAwardPage";
 import Router from "./routes/Router";
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <GlobalState>
       <GlobalStyle />
       <Router/>
-      {/* <MapPage />
-      <AwardPage /> */}
+      <MapPage />
+      <PinkAwardPage /> 
+      <RedAwardPage/>
     </GlobalState>
     </>
   );

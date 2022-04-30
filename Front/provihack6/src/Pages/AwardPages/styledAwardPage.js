@@ -1,7 +1,18 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
+export const PinkMainContainer = styled.div`
     background-color: #F673AD;
+    width: 100vw;
+    height: 100vh;
+    color: #000000;
+    font-family: Archivo, sans-seriff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const RedMainContainer = styled.div`
+    background-color: #C20000;
     width: 100vw;
     height: 100vh;
     color: #000000;
