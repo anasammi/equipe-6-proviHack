@@ -12,7 +12,7 @@ import "./styled.js";
 import {GOOGLE_API_KEY} from '../../apiKey'
 import { Address, AddressField, Button, DivKm, MapStyled, DivButtons } from "./styled.js";
 import { GlobalStateContext } from "../../global/GlobalStateContext.jsx";
-import { goToSuccessPage } from "../../routes/coordinator.js";
+import { goToAward } from "../../routes/coordinator.js";
 
 const Map = () => {
   const navigate = useNavigate(); 
@@ -115,7 +115,7 @@ const Map = () => {
 
   const startPatch = () => {
     if(transport === 'TRANSIT' || transport === 'BICYCLING'){
-      goToSuccessPage(navigate)
+      goToAward(navigate)
     }
   }
 
