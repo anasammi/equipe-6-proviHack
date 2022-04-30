@@ -19,11 +19,11 @@ export default function LocationPage() {
         <SplashPage />
       ) : (
         <MainDiv>
-          <Header name={"Localização"} />
-          <Title>Qual seu destino hoje ?</Title>
-          <RadioButton />
-          <Map />
-          <Navbar />
+        <Header name={'Localização'}/>
+        <Title>Qual seu destino hoje ?</Title>
+        <RadioButton />
+        <Map />
+        <Navbar isMap="true"/>
         </MainDiv>
       )}
     </>

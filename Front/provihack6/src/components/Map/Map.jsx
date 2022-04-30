@@ -12,7 +12,11 @@ import "./styled.js";
 import {GOOGLE_API_KEY} from '../../apiKey'
 import { Address, AddressField, Button, DivKm, MapStyled, DivButtons } from "./styled.js";
 import { GlobalStateContext } from "../../global/GlobalStateContext.jsx";
+<<<<<<< HEAD
+import { goToAward, goToSuccessPage } from "../../routes/coordinator.js";
+=======
 import { goToAward } from "../../routes/coordinator.js";
+>>>>>>> main
 
 const Map = () => {
   const navigate = useNavigate(); 
