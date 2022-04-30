@@ -23,6 +23,7 @@ export const Paragraph = styled.p`
     align-items: center;
     border: 10px solid lightgreen;
     border-radius: 50%;
+    margin-bottom: 10px;
 `
 
 export const GridStatus = styled.div`

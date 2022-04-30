@@ -25,7 +25,7 @@ export default function Dashboard() {
                 <PStyled>50L</PStyled>
             </GridStatus>
 
-            <H2Styled>Quantidade de CO<sub>2</sub></H2Styled>
+            <H2Styled>Cálculo de CO<sub>2</sub></H2Styled>
             <SelectCo2/>
 
             <Navbar isHome="true" />
