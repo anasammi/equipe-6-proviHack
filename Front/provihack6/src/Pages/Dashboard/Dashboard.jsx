@@ -20,7 +20,7 @@ export default function Dashboard() {
                 <PStyled>30km</PStyled>
                 <PStyled>50L</PStyled>
             </GridStatus>
-            <Image src={BikeImg} alt="" />
+            <Image src={BikeImg} alt="Pessoa andando de bicicleta" />
 
             <Navbar isHome="true" />
         </MainStyle>

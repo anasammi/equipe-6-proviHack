@@ -1,7 +1,10 @@
 import { RedMainContainer, TextContainer, MainText, Paragraph, Button, Icon } from "./styledAwardPage";
-import icon from "../../assests/eco.png"
+import icon from "../../assests/eco.png";
+import {useNavigate} from "react-router-dom";
+import { goToDashboard } from "../../routes/coordinator";
 
 export default function RedAwardPage() {
+    const navigate = useNavigate()
   return (
     <RedMainContainer>
       <TextContainer>
@@ -16,7 +19,7 @@ export default function RedAwardPage() {
         <MainText> 0 Ponto</MainText>
       </TextContainer>
       <Icon src={icon} />
-        <Button>Home</Button>
+        <Button onClick={() => goToDashboard(navigate)}>Home</Button>
     </RedMainContainer>
   );
 }

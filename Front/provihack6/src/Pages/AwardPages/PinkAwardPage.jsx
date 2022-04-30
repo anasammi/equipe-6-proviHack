@@ -1,7 +1,10 @@
 import { PinkMainContainer, TextContainer, MainText, Paragraph, Button, Icon } from "./styledAwardPage";
-import icon from "../../assests/eco.png"
+import icon from "../../assests/eco.png";
+import {useNavigate} from "react-router-dom";
+import { goToDashboard } from "../../routes/coordinator";
 
 export default function PinkAwardPage() {
+  const navigate = useNavigate()
   return (
     <PinkMainContainer>
       <TextContainer>
@@ -17,7 +20,7 @@ export default function PinkAwardPage() {
         <MainText>+ 1 Ponto</MainText>
       </TextContainer>
       <Icon src={icon} />
-        <Button>Home</Button>
+        <Button onClick={() => goToDashboard(navigate)}>Home</Button>
     </PinkMainContainer>
   );
 }
