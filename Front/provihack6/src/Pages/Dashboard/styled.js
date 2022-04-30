@@ -15,6 +15,7 @@ export const PointStyled = styled.div`
 `
 export const Paragraph = styled.p`
     font-size: 32px;
+    font-family: "Archivo";
     width: 100px;
     height: 100px;
     display: flex;
