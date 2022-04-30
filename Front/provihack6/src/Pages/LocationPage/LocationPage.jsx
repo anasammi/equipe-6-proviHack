@@ -2,17 +2,17 @@ import Header from "../../components/Header/Header";
 import Map from "../../components/Map/Map";
 import Navbar from "../../components/Navbar/Navbar";
 import RadioButton from "../../components/RadioButton/RadioButton";
-import { Title, SubTitle, MainDiv } from './styled'
+import {Title, MainDiv} from './styled'
 
 
-export default function LocationPage() {
-    return (
+export default function LocationPage(){
+    return(
         <MainDiv>
-            <Header name={'Localização'} />
-            <Title>Sua Rota</Title>
-            <RadioButton />
-            <Map />
-            <Navbar />
+        <Header name={'Localização'}/>
+        <Title>Qual seu destino hoje ?</Title>
+        <RadioButton />
+        <Map />
+        <Navbar />
         </MainDiv>
     )
 }

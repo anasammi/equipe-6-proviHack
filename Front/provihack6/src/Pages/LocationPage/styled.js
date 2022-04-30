@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainDiv = styled.div`
-  margin-bottom: 11vh;
+  margin-bottom: 6vh;
 `
 
 export const Title = styled.h2`

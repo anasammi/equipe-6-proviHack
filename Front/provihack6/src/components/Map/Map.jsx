@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from 'react-router-dom';
 import {
   GoogleMap,
   Marker,
@@ -9,13 +10,15 @@ import {
 } from "@react-google-maps/api";
 import "./styled.js";
 import {GOOGLE_API_KEY} from '../../apiKey'
-import { Address, AddressField, Button, DivKm, MapStyled } from "./styled.js";
+import { Address, AddressField, Button, DivKm, MapStyled, DivButtons } from "./styled.js";
 import { GlobalStateContext } from "../../global/GlobalStateContext.jsx";
+import { goToAward, goToSuccessPage } from "../../routes/coordinator.js";
 
 const Map = () => {
-
+  const navigate = useNavigate(); 
   const { transport } = useContext(GlobalStateContext); 
   const [map, setMap] = React.useState();
+  const [secondButton, setSecondButton] = React.useState(false);
   const [searchBoxA, setSearchBoxA] = React.useState();
   const [searchBoxB, setSearchBoxB] = React.useState();
   const [pointA, setPointA] = React.useState();
@@ -77,6 +80,7 @@ const Map = () => {
     if (pointA && pointB) {
       setOrigin(pointA);
       setDestination(pointB);
+      setSecondButton(true)
     }
   };
 
@@ -109,6 +113,12 @@ const Map = () => {
   let distance = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].distance.text;
   let duration = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].duration.text;
 
+  const startPatch = () => {
+    if(transport === 'TRANSIT' || transport === 'BICYCLING'){
+      goToAward(navigate)
+    }
+  }
+
   return (
     <MapStyled>
       <DivKm>
@@ -136,8 +146,10 @@ const Map = () => {
               placeholder="Digite o endereço final"
             />
           </StandaloneSearchBox>
-          <Button onClick={traceRoute}>Traçar rota</Button>
-        
+          <DivButtons>
+            <Button onClick={traceRoute}>Traçar rota</Button>
+            {secondButton ? <Button onClick={startPatch}>Iniciar Trajeto</Button> : null}
+          </DivButtons>       
         </Address>
         <GoogleMap
           onLoad={onMapLoad}

@@ -1,9 +1,9 @@
-import { MainContainer, TextContainer, MainText, Paragraph, Button, Icon } from "./styledAwardPage";
+import { PinkMainContainer, TextContainer, MainText, Paragraph, Button, Icon } from "./styledAwardPage";
 import icon from "../../assests/eco.png"
 
-export default function AwardPage() {
+export default function PinkAwardPage() {
   return (
-    <MainContainer>
+    <PinkMainContainer>
       <TextContainer>
         <MainText>
             PARABÉNS!<br/>
@@ -18,7 +18,7 @@ export default function AwardPage() {
       </TextContainer>
       <Icon src={icon} />
         <Button>Home</Button>
-    </MainContainer>
+    </PinkMainContainer>
   );
 }
 
