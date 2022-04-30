@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainStyle = styled.div`
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
 `
 
 export const H2Styled = styled.h2`
@@ -35,6 +35,7 @@ export const GridStatus = styled.div`
 export const Image = styled.img`
     width: 100vw;
     display: flex;
+    margin-top: 10px;
     justify-content: center;
 `
 
