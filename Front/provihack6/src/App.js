@@ -8,8 +8,8 @@ function App() {
     <>
     <GlobalState>
       <GlobalStyle />
-      {/* <MapPage /> */}
-      <AwardPage />
+      <MapPage />
+      {/* <AwardPage /> */}
     </GlobalState>
     </>
   );

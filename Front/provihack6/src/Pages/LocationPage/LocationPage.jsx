@@ -1,7 +1,8 @@
 import Header from "../../components/Header/Header";
 import Map from "../../components/Map/Map";
+import Navbar from "../../components/Navbar/Navbar";
 import RadioButton from "../../components/RadioButton/RadioButton";
-import {Title, SubTitle} from './styled'
+import {Title, SubTitle, MainDiv} from './styled'
 
 
 export default function LocationPage(){
@@ -11,6 +12,7 @@ export default function LocationPage(){
         <Title>Sua Rota</Title>
         <RadioButton />
         <Map />
+        <Navbar />
         </>
     )
 }
