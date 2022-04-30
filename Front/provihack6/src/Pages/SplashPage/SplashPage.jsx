@@ -1,4 +1,5 @@
 import logo from "../../assests/logo-splash.png"
+import { MainStyled } from "./styledSplashPage";
 
 export const SplashPage = () => {
     return (
