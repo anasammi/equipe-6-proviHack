@@ -12,7 +12,7 @@ export default function LocationPage(){
         <Title>Qual seu destino hoje ?</Title>
         <RadioButton />
         <Map />
-        <Navbar />
+        <Navbar isMap="true"/>
         </MainDiv>
     )
 }
