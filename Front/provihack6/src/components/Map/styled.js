@@ -27,7 +27,7 @@ export const Address = styled.div`
   border-radius: 4px;
   /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
   font-size: 14px;
-  margin: 12px auto;
+  margin: 0px auto;
 `;
 
 export const AddressField = styled.input`
@@ -49,10 +49,9 @@ export const Button = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px;
+  padding: 10px 20px;
   position: static;
   width: 145px;
-  left: calc(50% - 145px/2);
   top: 0%;
   bottom: 0%;
   background: #000000;
@@ -65,5 +64,9 @@ export const Button = styled.button`
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 10px auto;
+  margin: 3px auto;
   `;
+
+export const DivButtons = styled.div`
+  display: flex;
+`

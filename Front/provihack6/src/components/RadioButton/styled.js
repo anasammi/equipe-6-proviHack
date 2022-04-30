@@ -15,4 +15,8 @@ export const RadioStyled = styled.div`
 export const IconTransport = styled.img`
    margin: 0 20px;
    width: 40px;
+
+   :active{
+      border: 1px solid gray;
+   }
 `
