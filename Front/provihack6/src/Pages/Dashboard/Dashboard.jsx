@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
-import { GridStatus, H2Styled, Image, MainStyle, Paragraph, PointStyled, PStyled } from "./styled";
+import { GridStatus, H2Styled, H3Styled, Image, MainStyle, Paragraph, PointStyled, PStyled } from "./styled";
 import BikeImg from '../../assests/bike-riding.png'
 
 export default function Dashboard() {
@@ -13,9 +13,9 @@ export default function Dashboard() {
             </PointStyled>
             <H2Styled>Status</H2Styled>
             <GridStatus>
-                <h3>CO2/Kg</h3>
-                <h3>Km</h3>
-                <h3>Gás</h3>
+                <H3Styled>CO2/Kg</H3Styled>
+                <H3Styled>Km</H3Styled>
+                <H3Styled>Gás</H3Styled>
                 <PStyled>20kg</PStyled>
                 <PStyled>30km</PStyled>
                 <PStyled>50L</PStyled>
