@@ -7,9 +7,9 @@ export const MainStyle = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px solid black;
     height: 10vh;
     background-color: white;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
 `
 
 export const ImgStyled = styled.img`
