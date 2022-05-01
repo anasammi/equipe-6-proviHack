@@ -9,7 +9,7 @@ import {
   DirectionsRenderer,
 } from "@react-google-maps/api";
 import "./styled.js";
-import { GOOGLE_API_KEY } from '../../../apiKey'
+import { GOOGLE_API_KEY } from '../../apiKey'
 import { Address, AddressField, Button, DivKm, MapStyled, DivButtons } from "./styled.js";
 import { GlobalStateContext } from "../../global/GlobalStateContext.jsx";
 import { goToAward, goToNoAward } from "../../routes/coordinator.js";
