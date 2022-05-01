@@ -1,5 +1,5 @@
-# 🗺 ProviHack do Agora - Equipe 6
-Aplicação desenvolvida para o ProviHack do Agora (Abril/Maio 2022)
+# 🗺 ProviHack do Agora - Equipe 6 - EcoMaps
+Projeto desenvolvido para o ProviHack do Agora (Abril/Maio 2022). Para o problema "Como a tecnologia pode combater as mudanças climáticas e seus impactos?" foi desenvolvido a plataforma EcoMaps, que consiste em uma aplicação que auxilia o usuário a trocar a utilização do carro por meios de transporte mais sustentáveis. Para isso foi utilizada a API do Google Maps para obter o trajeto que será percorrido.
 
 ## 👥Desenvolvedores:
 - Ana Sue Sammi (Fullstack)
@@ -15,12 +15,29 @@ Aplicação desenvolvida para o ProviHack do Agora (Abril/Maio 2022)
 - Styled-components
 - Google Maps API
 
-## ⚙️ Funcionalidades: 
-A aplicação foi desenvolvida em cima de um design criado pela equipe de UX/UI do grupo e pensado como mobile-first. 
-Ao abrir o site, o usuário verá uma splash screen com o logo animado e que logo após o direcionará para a página inicial, onde há as opções de conhecer um pouco mais sobre o projeto, fazer o login ou se cadastrar no site. 
-Após o login/cadastro, o usuário é direcionado para a página principal da aplicação: o mapa, onde a pessoa pode escolher a rota que quer seguir, além do meio de transporte preferido. Ao clicar nos ícones dos meios de transporte (transporte público, bicicleta ou carro) é possível visualizar o tempo de viagem, a distância e a quantidade de CO<sub>2</sub> que será emitido no ar. Após ter definido a rota, o usuário clica no botão "iniciar trajeto" e é levado às páginas de premiação dependendo do meio de transporte escolhido. Ambas mostram uma mensagem à pessoa usuária e a quantidade de pontos que ela ganhou (1 ponto caso tenha optado por um meio de transporte sustentável ou 0 pontos no caso de ter escolhido um meio de transporte não sustentável). Nessa mesma página, há um botão que direciona para a página de dashboard, que mostra a pontuação total acumulada do usuário, a quantidade de gases poluentes e a quilometragem que o usuário também acumulou utilizando nossa aplicação, além de um select onde pode-se conferir a quantidade de gases poluentes emitidos por cada categoria de carro. Através da barra de navegação inferior é possível ser direcionado para a página da loja, onde a pessoa usuária poderá trocar seus pontos por prêmios, incentivando-a a utilizar meios de transporte menos poluentes para se locomover.
+## ⚙️ Funcionalidades:
+### Splash Screen
+Contém um logotipo do produto animado que direciona o usuário diretamente à tela inicial.
+
+### Tela iniial
+Tela que contém um botão de "me mostre como", que quando clicado abre um ESPAÇO informando o usuário sobre o que é o aplicativo.
+Também há um botão de login, que direciona à tela de login e um de cadastro, que leva à página de cadastro.
+### Login
+A página de login contém um ícone que representa um usuário, inputs para colocar e-mail e senha e dois botões: uma para realizar o login e outro para voltar à tela inicial.
+### Cadastro
+Na página de cadastro há um formulário para que o usuário possa cadastrar suas informações, além um botão para realizar o cadastro e outro para voltar para a página inicial.
+### Mapa
+Tela que contém um mapa, ícones que representam os meios de transporte e inputs para colocar o trajeto a ser seguido. Após escolher o transporte e traçar a rota, aparecem a distância e o tempo da viagem, além de um botão para iniciar o trajeto.
+### Páginas de premiação
+Após o trajeto ser iniciado na página do mapa, dependendo do meio de transporte escolhido para realizar a rota, o usuário é direcionado a uma das duas páginas de premiação: uma que parabeniza e dá pontos ao usuário e outra que não dá nenhum ponto, caso o transporte escolhido tenha sido o carro.
+### Dashboard
+Nessa tela podemos ver a pontuação do usuário, os status com informações sobre a quantidade de gás carbônico emitido, a quilometragem percorrida e a quantidade de gás utilizado. Também há uma calculadora de gás carbônico emitido por cada categoria de carro que pode ser escolhida através de um select. 
+### Loja
+Na loja, o usuário consegue ver seus pontos, que poderão ser utilizados nessa página para serem trocados por produtos cadastrados. Há uma seção dedicada aos patrocinadores e os produtos separados por categoria.
 
 ## 👣 Próximos passos:
-Queremos criar o backend da aplicação, para que cada usuário tenha um cadastro e login no site, podendo acumular seus pontos e ter uma experiência mais individual. No mapa, queremos implementar a rota em tempo real utilizando o GPS do dispositivo. 
+Queremos criar o backend da aplicação, para que cada usuário tenha um cadastro e login no site, podendo acumular seus pontos e ter uma experiência mais personalizada. No mapa, queremos implementar a rota em tempo real utilizando o GPS do dispositivo móvel do usuário.
+
+## 📸 Imagens:
 
 
