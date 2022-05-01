@@ -3,19 +3,11 @@ import { SplashPage } from "./SplashPage";
 import HomePage from "../HomePage/HomePage";
 
 export const InitialPage = () => {
-    const [splashScreentime, setSplashScreentime] = useState(true);
+  const [splashScreentime, setSplashScreentime] = useState(true);
 
-    setTimeout(() => {
-        setSplashScreentime(false);
-      }, 4000);
+  setTimeout(() => {
+    setSplashScreentime(false);
+  }, 4000);
 
-  return (
-    <>
-      {splashScreentime ? (
-        <SplashPage />
-      ) : (
-        <HomePage/>
-      )}
-    </>
-  );
-}
+  return <>{splashScreentime ? <SplashPage /> : <HomePage />}</>;
+};

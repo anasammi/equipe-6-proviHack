@@ -7,16 +7,16 @@ export const RadioStyled = styled.div`
   align-items: center;
   font-family: "Archivo";
 
-  div{
-      margin: 5px 0;
+  div {
+    margin: 5px 0;
   }
-  `
+`;
 
 export const IconTransport = styled.img`
-   margin: 0 20px;
-   width: 40px;
+  margin: 0 20px;
+  width: 40px;
 
-   :active{
-      border: 1px solid gray;
-   }
-`
+  :active {
+    border: 1px solid gray;
+  }
+`;

@@ -1,50 +1,50 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MainStyle = styled.div`
-    margin-bottom: 10vh;
-`
+  margin-bottom: 10vh;
+`;
 
 export const H2Styled = styled.h2`
-    margin: 20px;
-    font-family: 'Archivo';
-`
+  margin: 20px;
+  font-family: "Archivo";
+`;
 
 export const PointStyled = styled.div`
-    display: flex;
-    justify-content: center;
-`
+  display: flex;
+  justify-content: center;
+`;
 export const Paragraph = styled.p`
-    font-size: 32px;
-    font-family: "Archivo";
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid lightgreen;
-    border-radius: 50%;
-    margin-bottom: 10px;
-`
+  font-size: 32px;
+  font-family: "Archivo";
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid lightgreen;
+  border-radius: 50%;
+  margin-bottom: 10px;
+`;
 
 export const GridStatus = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px;
-    justify-items: center;
-`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  justify-items: center;
+`;
 
 export const Image = styled.img`
-    width: 100vw;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-`
+  width: 100vw;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+`;
 
 export const PStyled = styled.p`
-    margin: 10px;
-    font-family: "Archivo";
-`
+  margin: 10px;
+  font-family: "Archivo";
+`;
 
-export const H3Styled = styled.h3 `
-    font-family: "Archivo";
-`
+export const H3Styled = styled.h3`
+  font-family: "Archivo";
+`;

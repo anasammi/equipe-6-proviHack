@@ -5,10 +5,10 @@ import Router from "./routes/Router";
 function App() {
   return (
     <>
-    <GlobalState>
-      <GlobalStyle />
-      <Router/>
-    </GlobalState>
+      <GlobalState>
+        <GlobalStyle />
+        <Router />
+      </GlobalState>
     </>
   );
 }

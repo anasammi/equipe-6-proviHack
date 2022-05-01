@@ -8,17 +8,16 @@ export const SignUpDiv = styled.div`
   margin: auto;
   width: 80%;
 
-  img{
-      width: 100px;
-      margin-top: 5%;
+  img {
+    width: 100px;
+    margin-top: 5%;
   }
 
-  input{
-      margin: 2% 0;
+  input {
+    margin: 2% 0;
   }
 
-  button{
-      margin-top: 2%;
+  button {
+    margin-top: 2%;
   }
-
-`
+`;
