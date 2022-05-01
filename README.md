@@ -39,7 +39,7 @@ Na loja, o usuário consegue ver seus pontos, que poderão ser utilizados nessa 
 Queremos criar o backend da aplicação, para que cada usuário tenha um cadastro e login no site, podendo acumular seus pontos e ter uma experiência mais personalizada. No mapa, queremos implementar a rota em tempo real utilizando o GPS do dispositivo móvel do usuário.
 
 ## 📸 Imagens:
-![splash-screen](https://user-images.githubusercontent.com/94693150/166164247-1e223754-dc22-462b-ae18-242385fedfde.png)
+![splash-screen](https://user-images.githubusercontent.com/94693150/166164267-0422abde-4213-4664-b5a5-339f3c0c9c2b.png)
 ![tela-inicial](https://user-images.githubusercontent.com/94693150/166164110-d592bc27-9b90-4423-89f0-57ab2d69e1ce.png)
 ![tela-inicial-mostre-como](https://user-images.githubusercontent.com/94693150/166164104-903f6a51-d119-400b-ae9e-e50979f2e86d.png)
 ![cadastro](https://user-images.githubusercontent.com/94693150/166164124-fea362e8-edfc-49b3-a5a5-05bf94dbd116.png)
