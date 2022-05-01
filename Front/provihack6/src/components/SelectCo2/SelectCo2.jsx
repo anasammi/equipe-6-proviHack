@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { dadosJson } from "./dadosJson";
-import { Paragraph, Select } from "./styled";
+import { Paragraph, Select, LabelInput } from "./styled";
 
 export default function SelectCo2() {
 
@@ -25,7 +25,7 @@ export default function SelectCo2() {
 
   return (
     <>
-      {/* <h3>Qual o tipo do seu veiculo ?</h3> */}
+      <LabelInput>Qual o tipo do seu veiculo ?</LabelInput>
       <Select onChange={(e) => setValueCar(e.target.value)}>{selectCo()}</Select>
       <Paragraph>Esse tipo de veículo emite <strong>{issue(valueCar)}g</strong> de CO<sub>2</sub> (Gás Carbônico) por kilômetro!</Paragraph>
     </>

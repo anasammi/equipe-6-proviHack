@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SplashPage } from "./SplashPage";
-import LocationPage from "../LocationPage/LocationPage";
+import HomePage from "../HomePage/HomePage";
 
 export const InitialPage = () => {
     const [splashScreentime, setSplashScreentime] = useState(true);
@@ -14,7 +14,7 @@ export const InitialPage = () => {
       {splashScreentime ? (
         <SplashPage />
       ) : (
-        <LocationPage/>
+        <HomePage/>
       )}
     </>
   );

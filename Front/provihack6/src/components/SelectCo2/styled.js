@@ -18,3 +18,9 @@ export const Paragraph = styled.p`
     padding: 10px;
     border-radius: .8em;
 `
+
+export const LabelInput = styled.h4`
+   font-family: "Archivo";
+   width: 90%;
+   margin: 2px auto;
+`

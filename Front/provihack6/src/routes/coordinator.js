@@ -17,3 +17,15 @@ export const goToLocation = (navigate) => {
   export const goToNoAward = (navigate) => {
     navigate("/noaward");
   };
+
+  export const goToHomePage = (navigate) => {
+    navigate("/homePage");
+  };
+
+  export const goToLogin = (navigate) => {
+    navigate("/login");
+  };
+
+  export const goToSignUp = (navigate) => {
+    navigate("/signup");
+  };
