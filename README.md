@@ -19,7 +19,7 @@ Projeto desenvolvido para o ProviHack do Agora (Abril/Maio 2022). Para o problem
 ### Splash Screen
 Contém um logotipo do produto animado que direciona o usuário diretamente à tela inicial.
 
-### Tela iniial
+### Tela inicial
 Tela que contém um botão de "me mostre como", que quando clicado abre um ESPAÇO informando o usuário sobre o que é o aplicativo.
 Também há um botão de login, que direciona à tela de login e um de cadastro, que leva à página de cadastro.
 ### Login
@@ -39,5 +39,16 @@ Na loja, o usuário consegue ver seus pontos, que poderão ser utilizados nessa 
 Queremos criar o backend da aplicação, para que cada usuário tenha um cadastro e login no site, podendo acumular seus pontos e ter uma experiência mais personalizada. No mapa, queremos implementar a rota em tempo real utilizando o GPS do dispositivo móvel do usuário.
 
 ## 📸 Imagens:
-
-
+![splash-screen](https://user-images.githubusercontent.com/94693150/166164182-3051ce4f-e03e-4512-9d71-f982905fbf05.png)
+![tela-inicial](https://user-images.githubusercontent.com/94693150/166164110-d592bc27-9b90-4423-89f0-57ab2d69e1ce.png)
+![tela-inicial-mostre-como](https://user-images.githubusercontent.com/94693150/166164104-903f6a51-d119-400b-ae9e-e50979f2e86d.png)
+![cadastro](https://user-images.githubusercontent.com/94693150/166164124-fea362e8-edfc-49b3-a5a5-05bf94dbd116.png)
+![login](https://user-images.githubusercontent.com/94693150/166164143-23154cdf-a59b-4c64-9ed3-ff67b40008b1.png)
+![mapa](https://user-images.githubusercontent.com/94693150/166164151-31e44d8e-b15e-437e-b182-72fc2316cc10.png)
+![mapa-bicicleta](https://user-images.githubusercontent.com/94693150/166164154-43fee589-7f58-4320-8219-af95649f6fbe.png)
+![award-page-rosa](https://user-images.githubusercontent.com/94693150/166164156-7d266549-cfb3-4d46-a415-f81e89da6967.png)
+![award-page-vermelho](https://user-images.githubusercontent.com/94693150/166164160-13e36e9a-d45c-4810-90d4-8c1bfa3977af.png)
+![dashboard-1](https://user-images.githubusercontent.com/94693150/166164166-c8b49f8e-7fa4-4c33-8f88-dc64710e3edf.png)
+![dashboard-2](https://user-images.githubusercontent.com/94693150/166164169-3d58f022-0ed2-4987-ab52-6d04ffa402c6.png)
+![loja-1](https://user-images.githubusercontent.com/94693150/166164172-b8e60980-9634-495f-92cb-22ddef502957.png)
+![loja-2](https://user-images.githubusercontent.com/94693150/166164174-3592572e-ed1f-4f61-8b05-a136a3e6a408.png)
