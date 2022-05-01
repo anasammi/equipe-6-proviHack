@@ -15,7 +15,7 @@ export default function HomePage() {
 
   const alert = (
     <div className="alert alert-primary" role="alert">
-      esolha meios de transportes menos poluentes para ir ao seu destino e ganhe pontos para trocar por produtos em nossas lojas parceiras ! Além de manter-se saudável =) 
+      Escolha meios de transportes menos poluentes para ir ao seu destino e ganhe pontos para trocar por produtos em nossas lojas parceiras! Além de manter-se saudável =) 
     </div>
   );
 

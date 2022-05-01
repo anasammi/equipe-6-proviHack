@@ -21,5 +21,10 @@ export const LoginDiv = styled.div`
   button{
       margin-top: 2%;
   }
+`
 
+export const ButtonDiv = styled.div`
+    button{
+        margin-right: 20px;
+    }
 `
