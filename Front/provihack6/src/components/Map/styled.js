@@ -25,7 +25,6 @@ export const Address = styled.div`
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 4px;
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
   font-size: 14px;
   margin: 0px auto;
 `;
@@ -60,7 +59,6 @@ export const Button = styled.button`
   font-family: "Archivo";
   font-weight: 500;
   border-radius: 8px;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;

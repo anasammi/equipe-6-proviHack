@@ -10,23 +10,21 @@ import LoginPage from "../Pages/LoginPage/LoginPage";
 import SignUp from "../Pages/SignupPage/SignUp";
 
 const Router = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-
-                <Route path="/" element={<InitialPage />} />
-                <Route path="/homePage" element={<HomePage />} />
-                <Route path="/map" element={<LocationPage/>} />
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/award" element={<PinkAwardPage />} />
-                <Route path="/noaward" element={<RedAwardPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/signup" element={<SignUp />} />
-                
-            </Routes>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<InitialPage />} />
+        <Route path="/homePage" element={<HomePage />} />
+        <Route path="/map" element={<LocationPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/award" element={<PinkAwardPage />} />
+        <Route path="/noaward" element={<RedAwardPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default Router;

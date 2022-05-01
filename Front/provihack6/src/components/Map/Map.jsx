@@ -9,14 +9,14 @@ import {
   DirectionsRenderer,
 } from "@react-google-maps/api";
 import "./styled.js";
-import {GOOGLE_API_KEY} from '../../apiKey'
+import { GOOGLE_API_KEY } from '../../key/apiKey'
 import { Address, AddressField, Button, DivKm, MapStyled, DivButtons } from "./styled.js";
 import { GlobalStateContext } from "../../global/GlobalStateContext.jsx";
 import { goToAward, goToNoAward } from "../../routes/coordinator.js";
 
 const Map = () => {
-  const navigate = useNavigate(); 
-  const { transport } = useContext(GlobalStateContext); 
+  const navigate = useNavigate();
+  const { transport } = useContext(GlobalStateContext);
   const [map, setMap] = React.useState();
   const [secondButton, setSecondButton] = React.useState(false);
   const [searchBoxA, setSearchBoxA] = React.useState();
@@ -48,7 +48,6 @@ const Map = () => {
 
   const onPlacesChangedA = () => {
     const places = searchBoxA.getPlaces();
-    console.log(places);
     const place = places[0];
     const location = {
       lat: place?.geometry?.location?.lat() || 0,
@@ -63,7 +62,6 @@ const Map = () => {
 
   const onPlacesChangedB = () => {
     const places = searchBoxB.getPlaces();
-    console.log(places);
     const place = places[0];
     const location = {
       lat: place?.geometry?.location?.lat() || 0,
@@ -102,7 +100,7 @@ const Map = () => {
     }
   }, []);
 
-  
+
 
   const directionsRendererOptions = React.useMemo(() => {
     return {
@@ -114,7 +112,7 @@ const Map = () => {
   let duration = directionsRendererOptions.directions && directionsRendererOptions.directions.routes[0].legs[0].duration.text;
 
   const startPatch = () => {
-    if(transport === 'TRANSIT' || transport === 'BICYCLING'){
+    if (transport === 'TRANSIT' || transport === 'BICYCLING') {
       goToAward(navigate)
     } else {
       goToNoAward(navigate)
@@ -124,14 +122,14 @@ const Map = () => {
   return (
     <MapStyled>
       <DivKm>
-      {duration ? <p>Duração: {duration}</p> : null}
-      {distance ? <p>Distância: {distance}</p> : null}
+        {duration ? <p>Duração: {duration}</p> : null}
+        {distance ? <p>Distância: {distance}</p> : null}
       </DivKm>
       <LoadScript
         googleMapsApiKey={GOOGLE_API_KEY}
         libraries={["places"]}
       >
-          <Address>
+        <Address>
           <StandaloneSearchBox
             onLoad={onLoadA}
             onPlacesChanged={onPlacesChangedA}
@@ -151,11 +149,11 @@ const Map = () => {
           <DivButtons>
             <Button onClick={traceRoute}>Traçar rota</Button>
             {secondButton ? <Button onClick={startPatch}>Iniciar Trajeto</Button> : null}
-          </DivButtons>       
+          </DivButtons>
         </Address>
         <GoogleMap
           onLoad={onMapLoad}
-          mapContainerStyle={{width: "100%", height: "60%"}}
+          mapContainerStyle={{ width: "100%", height: "60%" }}
           center={position}
           zoom={15}
         >

@@ -8,7 +8,7 @@ export default function LocationPage() {
   return (
     <MainDiv>
       <Header name={"Localização"} />
-      <Title>Qual seu destino hoje ?</Title>
+      <Title>Qual seu destino hoje?</Title>
       <RadioButton />
       <Map />
       <Navbar isMap="true" />

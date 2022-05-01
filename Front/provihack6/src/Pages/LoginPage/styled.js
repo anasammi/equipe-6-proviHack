@@ -9,22 +9,22 @@ export const LoginDiv = styled.div`
   width: 80%;
   margin-top: 10%;
 
-  img{
-      width: 100px;
-      margin-top: 5%;
+  img {
+    width: 100px;
+    margin-top: 5%;
   }
 
-  input{
-      margin: 2% 0;
+  input {
+    margin: 2% 0;
   }
 
-  button{
-      margin-top: 2%;
+  button {
+    margin-top: 2%;
   }
-`
+`;
 
 export const ButtonDiv = styled.div`
-    button{
-        margin-right: 20px;
-    }
-`
+  button {
+    margin-right: 20px;
+  }
+`;

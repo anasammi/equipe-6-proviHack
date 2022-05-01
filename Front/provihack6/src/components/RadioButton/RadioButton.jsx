@@ -9,7 +9,7 @@ import busBlack from "../../assests/busBlack.svg";
 import bikeBlack from "../../assests/bikeBlack.svg";
 
 export default function RadioButton() {
-  const { transport, setTransport } = useContext(GlobalStateContext);
+  const { setTransport } = useContext(GlobalStateContext);
   const [bikeIcon, setBike] = useState(false);
   const [busIcon, setBus] = useState(false);
   const [carIcon, setCar] = useState(false);
