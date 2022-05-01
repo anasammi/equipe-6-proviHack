@@ -2,7 +2,7 @@
 Projeto desenvolvido para o ProviHack do Agora (Abril/Maio 2022). Para o problema "Como a tecnologia pode combater as mudanças climáticas e seus impactos?" foi desenvolvido a plataforma EcoMaps, que consiste em uma aplicação que auxilia o usuário a trocar a utilização do carro por meios de transporte mais sustentáveis. Para isso foi utilizada a API do Google Maps para obter o trajeto que será percorrido.
 
 ## 👥Desenvolvedores:
-- Ana Sue Sammi (Fullstack) - https://www.linkedin.com/in/ana-sue-sammi/
+- Ana Sue Sammi (Fullstack) - <a href="https://www.linkedin.com/in/ana-sue-sammi/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"></a> 
 - Fabiana Leonardo (Produto) - https://www.linkedin.com/in/fabianaleonardo/
 - Gabriela Hermenegildo Junior (Fullstack) - https://www.linkedin.com/in/gabriela-hermenegildo-jr/
 - Kamila Mota (UX/UI) - https://www.linkedin.com/in/kamila-mota-35226612a/
